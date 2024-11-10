@@ -1,0 +1,71 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #111, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.display {
+    font-size: 2em;
+    color: #0ff;
+    background: rgba(0, 255, 255, 0.1);
+    border: 2px solid #0ff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    overflow-x: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    font-size: 1.5em;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #0ff;
+    background: rgba(0, 255, 255, 0.15);
+    transition: all 0.2s;
+    user-select: none;
+}
+
+.btn:hover {
+    background: rgba(0, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.equal {
+    grid-column: span 2;
+    background: #0ff;
+    color: #111;
+    font-weight: bold;
+}
+
+.equal:hover {
+    background: #1affff;
+    transform: scale(1.1);
+}
